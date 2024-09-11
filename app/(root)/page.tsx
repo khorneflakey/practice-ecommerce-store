@@ -1,10 +1,9 @@
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
-
-export default function Home() {
+const SetupPage = () => {
   return (
     <div className="p-4">
-      <Button size="default" variant="outline">Click me!</Button>
+     This is a protected route!
     </div>
   )
 }
+
+export default SetupPage
