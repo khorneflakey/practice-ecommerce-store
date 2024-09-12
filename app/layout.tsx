@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { ClerkProvider, SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
 import { ModalProvider } from "@/providers/modal-provider";
+import { ToasterProvider } from "@/providers/toast-provider";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -29,6 +30,7 @@ export default function RootLayout({
     <ClerkProvider afterSignOutUrl="/">
       <html lang="en">
         <body>
+          <ToasterProvider />
           <ModalProvider />
           <SignedOut>
             <SignInButton />
