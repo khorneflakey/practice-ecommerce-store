@@ -1,6 +1,6 @@
 "use client"
 
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { useStoreModal } from "@/hooks/use-store-modal";
 import { Store } from "@prisma/client"
 import { useParams, useRouter } from "next/navigation";
