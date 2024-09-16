@@ -16,7 +16,7 @@ export async function POST (
         }
 
         if (!name) {
-            return new NextResponse("Name i required", {status: 400})
+            return new NextResponse("Name is required", {status: 400})
         }
 
         const store = await prismadb.store.create({
@@ -26,7 +26,7 @@ export async function POST (
             }
         });
 
-        return NextResponse.json("store");
+        return NextResponse.json(store);
 
     } catch (error) {
         console.log('[STORES_POST]', error);
