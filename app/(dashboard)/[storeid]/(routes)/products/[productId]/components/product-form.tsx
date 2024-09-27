@@ -63,7 +63,6 @@ export const ProductForm: React.FC<ProductFormProps> = ({
         resolver: zodResolver(formSchema),
         defaultValues: initialData ? {
             ...initialData,
-            price: parseFloat(String(initialData?.price)),
         } : {
             name: '',
             images: [],
