@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <ClerkProvider afterSignOutUrl="/">
       <html lang="en">
-        <body className={geistMono.className}>
+        <body>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <ToasterProvider />
             <ModalProvider />
@@ -38,7 +38,7 @@ export default function RootLayout({
               <SignInButton />
             </SignedOut>
             {children}
-            </ThemeProvider>
+          </ThemeProvider>
         </body>
       </html>
     </ClerkProvider>
